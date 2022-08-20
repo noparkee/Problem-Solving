@@ -9,7 +9,6 @@ def solution(n):
         cnt += 1
 
     r = n-num
-    tmp = []
     while cnt > 0:
         if r % 3**(cnt-1) == 0:
             answer += available[r // 3**(cnt-1) - 1]    # -1 해주는게 포인트
